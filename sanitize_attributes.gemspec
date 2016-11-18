@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.required_ruby_version = '>= 2.0.0'
 
-  s.add_dependency "rails", ">= 4"
+  s.add_dependency "rails", ">= 3.2"
 
   s.add_runtime_dependency 'activerecord'
 

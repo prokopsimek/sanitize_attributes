@@ -1,8 +1,12 @@
 # SanitizeAttributes
-Short description and motivation.
+Rails gem to sanitize attributes in write & read methods.
 
 ## Usage
-How to use my plugin.
+In your model do e.g.:
+```ruby
+sanitize_attributes :short_description
+```
+and from attribute `short_description` will be removed tags as defined in your config
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -24,6 +28,8 @@ $ gem install sanitize_attributes
 ## Configuration
 
 You don't need to configure anything, but if you want to customize the behaviour, use the following snippet:
+
+create file `initializers/sanitize_attributes.rb`
 
 ```ruby
 SanitizeAttributes.configure do |config|
