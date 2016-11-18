@@ -1,3 +1,6 @@
+require 'bundler/gem_tasks'
+task default: :spec
+
 begin
   require 'bundler/setup'
 rescue LoadError

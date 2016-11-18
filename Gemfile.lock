@@ -3,7 +3,7 @@ PATH
   specs:
     sanitize_attributes (0.1.0)
       activerecord
-      rails (>= 4)
+      rails (>= 3.2)
 
 GEM
   remote: https://rubygems.org/
@@ -141,6 +141,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rake
   rspec
   rspec-rails
   sanitize
