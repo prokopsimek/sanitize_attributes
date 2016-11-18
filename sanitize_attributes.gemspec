@@ -5,7 +5,7 @@ require "sanitize_attributes/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "sanitize_attributes"
+  s.name        = "active_record_sanitize_attributes"
   s.version     = SanitizeAttributes::VERSION
   s.authors     = ["Prokop Simek"]
   s.email       = ["prokop.simek@applifting.cz"]

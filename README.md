@@ -12,7 +12,7 @@ and from attribute `short_description` will be removed tags as defined in your c
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sanitize_attributes'
+gem 'active_record_sanitize_attributes'
 ```
 
 And then execute:
@@ -22,7 +22,7 @@ $ bundle
 
 Or install it yourself as:
 ```bash
-$ gem install sanitize_attributes
+$ gem install active_record_sanitize_attributes
 ```
 
 ## Configuration
