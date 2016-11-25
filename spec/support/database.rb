@@ -18,5 +18,5 @@ if File.exist?(database_yml)
   load(File.dirname(__FILE__) + '/../internal/app/models/models.rb')
 
 else
-  fail "Please create #{database_yml} first to configure your database. Take a look at: #{database_yml}.sample"
+  raise "Please create #{database_yml} first to configure your database. Take a look at: #{database_yml}.sample"
 end

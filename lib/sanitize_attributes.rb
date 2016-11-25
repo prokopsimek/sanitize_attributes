@@ -10,14 +10,13 @@ require 'sanitize_attributes/sanitizable'
 begin
   require 'rails/engine'
   require 'sanitize_attributes/engine'
-  rescue LoadError
+rescue LoadError
 end
 
 module SanitizeAttributes
+  extend ActiveSupport::Autoload
 
-	extend ActiveSupport::Autoload
-
-	autoload :Sanitizable
+  autoload :Sanitizable
 
   class << self
     def configuration
@@ -34,6 +33,6 @@ module SanitizeAttributes
   end
 
   ActiveSupport.on_load(:active_record) do
-  	extend SanitizeAttributes::Sanitizable
-	end
+    extend SanitizeAttributes::Sanitizable
+  end
 end

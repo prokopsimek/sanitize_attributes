@@ -1,3 +1,3 @@
 class SanitizableModel < ActiveRecord::Base
-	sanitize_attributes :short_description
+  sanitize_attributes :short_description
 end
