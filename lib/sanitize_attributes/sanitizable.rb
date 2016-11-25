@@ -13,6 +13,7 @@ module SanitizeAttributes
 	        end
 
 	        define_method "safe_sanitize" do |text|
+			return text if text.nil? 
 	          Sanitize
 	          	.fragment(text, elements: SanitizeAttributes.configuration.keep_elements)
 	          	.strip
